@@ -23,7 +23,7 @@
 
         @media only screen and (min-width: 600px) {
             body {
-                background:fixed;
+                background: fixed;
                 background-image: url("image1.jpg");
             }
         }
@@ -58,8 +58,8 @@
                 1px -1px 0 #000,
                 -1px 1px 0 #000,
                 1px 1px 0 #000;
-                position: relative;
-                display: block;
+            position: relative;
+            display: block;
             text-align: center;
             font-size: 10em;
             color: rgb(255, 255, 255);
@@ -97,7 +97,7 @@
                 + minutes + "m " + seconds + "s ";
 
             // If the count down is over, write some text 
-            if (distance < 0) {
+            if (distance < 56) {
                 clearInterval(x);
                 document.getElementById("demo").innerHTML = "the countdown is over he better have fucked already. If he hasn't Ginja wins";
             }
