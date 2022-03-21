@@ -68,17 +68,23 @@
         }
 
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 
         
     </style>
 </head>
 
 <body>
-    <h1>Lourenço is a lost cause in:</h1>
+    <h1 id="h">Lourenço is a lost cause in:</h1>
     <p id="demo"></p>
 
-    <div id="displayImage" style="display:none; text-align: center; align:center;" >
-        <img src="https://i.redd.it/1nox7mat7l781.jpg">
+    <div id="displayImage" style="display:none;" >
+        <img class="center" src="https://i.redd.it/1nox7mat7l781.jpg">
         
       </div>
 
@@ -109,6 +115,7 @@
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("demo").innerHTML = ""; 
+                document.getElementById("h").innerHTML = "";
 
                 //Consider this function to display the image and the <p>
             function myFunction() {
@@ -116,7 +123,7 @@
             }
 
             //This calls the myFunction() in the set time.
-            setInterval(myFunction, 5000);
+            setInterval(myFunction, 0);
 
             //5000 is in milliseconds, which is 5 seconds.
                 
