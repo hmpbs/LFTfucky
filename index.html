@@ -74,8 +74,13 @@
 </head>
 
 <body>
-    <h1>Lourenço is a lost cause in:</h1>
+    <h1>Lourenço is a lost cause ino:</h1>
     <p id="demo"></p>
+
+    <div id="displayImage" style="display:none">
+        <img src="https://i.kym-cdn.com/entries/icons/mobile/000/039/393/cover2.jpg">
+        <p>aaa</p>
+      </div>
 
     <script>
         // Set the date we're counting down to
@@ -104,6 +109,17 @@
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("demo").innerHTML = "no bitches??"; 
+
+                //Consider this function to display the image and the <p>
+            function myFunction() {
+            document.getElementById("displayImage").style="display:block";
+            }
+
+            //This calls the myFunction() in the set time.
+            setInterval(myFunction, 5000);
+
+            //5000 is in milliseconds, which is 5 seconds.
+                
                 
             }
         }, 1000);
